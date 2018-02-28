@@ -1,9 +1,9 @@
 # Postgis Enabled Rails App
-Ruby Version: 2.4.3
-Rails Version: Latest (using git in gem file)
-PostgreSQL: (latest)
-This is the current state of the project that I'm adding stuff to
-Note: It's important not to have an outdated Rails or Ruby installation to get this project to work, I wasted a lot of time trying to figure out why the gems I needed didn't work and it was because Rails and Ruby were older versions and I was using RailsInstaller to set up the environment which is BAD, install ruby first from their site, then do gem install rails from terminal and make sure to first uninstall any other versions of either Rails or Ruby).
+*Ruby Version: 2.4.3
+*Rails Version: Latest (using git in gem file)
+*PostgreSQL: (latest)
+*This is the current state of the project that I'm adding stuff to
+*Note: It's important not to have an outdated Rails or Ruby installation to get this project to work, I wasted a lot of time trying to figure out why the gems I needed didn't work and it was because Rails and Ruby were older versions and I was using RailsInstaller to set up the environment which is BAD, install ruby first from their site, then do gem install rails from terminal and make sure to first uninstall any other versions of either Rails or Ruby).
 you should get no errors running this if you have recent versions of the software AND having done the database.yml modification to have your Postgres password in it instead of the one i set on my machine.
 
 What the database side has:
