@@ -24,8 +24,11 @@ To view what parameters need to be given to create an entry in any of the tables
 Another thing to look at: app/models has class files for each of artist, user, event, place. These class files are basically empty at this point but they do have one line that specifies relations among them so it's useful to look at. User class also has basic validation of email address, not letting you add empty password, not allowing duplicate email addresses in the database, and no empty fields for email username and password.
 
 What needs to be added: 
-1. Add a basic user interface that allows using the HTML text fields to create users instead of manually creating them using the Rails console.
+1. Add a basic user interface that allows using the HTML text fields to create users instead of manually creating them using the Rails console. This is mostly done by following the tutorial I shared earlier (https://www.railstutorial.org/book/). This also includes doing work on how user profiles will look like, and how the template for an artist page would look like.
 2. Create dummy data to populate the artist and place tables so that we can create events that use both and demonstrate the relational feature. 
+3. Investigate the calendar integration, what will we exactly show on the calendar per user? 
+4. The tags feature. How will we use this and how to demonstrate it. For now we can search by genre because we have a column for it. 
+
 
 
 
