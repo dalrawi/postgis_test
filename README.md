@@ -12,7 +12,7 @@ An Artists table, with name, genre attributes. A Places (will rename to venues) 
 
 ## How to interact with these tables:  
 1. pull the project and navigate to that directory with the terminal
-2. once in the directory (called postgis_test), you may need to run bundle install to get the gems, then run rails c to enter the interactive ruby terminal that will let you itneract with the database without using any SQL statements (this is thanks to Active Record that makes it so that you can use ruby code to interact with the database).
+2. once in the directory (called postgis_test), you may need to run bundle install to get the gems, then run "rails c" to enter the interactive ruby terminal that will let you itneract with the database without using any SQL statements (this is thanks to Active Record that makes it so that you can use ruby code to interact with the database).
 3. To create a user, type u1 (or any variable name you like) = User.create(username: "some name", email: "some email address", password: "give it a password")
 Note that password is given on creation, but what is actually saved in the table is a hashed version of what the user inputted as their password, this is secure as we don't have to store actual passwords in a database. This hash is automatically generated courtesy of bcrypt, a Ruby gem for secure password authentication.
 to view all users added to the database: User.all
