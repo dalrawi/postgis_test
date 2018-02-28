@@ -2,8 +2,9 @@
 Ruby Version: 2.4.3
 Rails Version: Latest (using git in gem file)
 PostgreSQL: (latest)
+This is the current state of the project that I'm adding stuff to
 
-What the database has:
+What the database side has:
 An Artists table, with name, genre attributes. A Places (will rename to venues) table that has name, (will add address) and a column of type st_point (courtesy of PostGIS, this column will allow us to do various radius queries that require longitude latitude), an Event table and a Users table with username, email and password attributes. And finally join tables for artists->places and users->events. The users-events join table allows us to store the ids of users in one column and the ids of events associated with that user's id in another column. The users table also has an indexed email column, allowing fast lookup when we want to pull the profile of the user associated with that email address.
 
 How to interact with these tables:
@@ -19,7 +20,9 @@ For more on how to interact with the database: http://guides.rubyonrails.org/act
 
 Another thing to look at: app/models has class files for each of artist, user, event, place. These class files are basically empty at this point but they do have one line that specifies relations among them so it's useful to look at. User class also has basic validation of email address, not letting you add empty password, not allowing duplicate email addresses in the database, and no empty fields for email username and password.
 
-
+What needs to be added: 
+1. Add a basic user interface that allows using the HTML text fields to create users instead of manually creating them using the Rails console.
+2. Create dummy data to populate the artist and place tables so that we can create events that use both and demonstrate the relational feature. 
 
 
 
