@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'users#index'
+
+  get 'artists/index'
+  #get 'artists_controller/index'
+
+  match 'artists/index', to: 'artists#index', via: :post
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
