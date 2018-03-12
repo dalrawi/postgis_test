@@ -6,6 +6,19 @@
         <li><%= link_to "Help",   '#' %></li>
         <li><%= link_to "Log in", '#' %></li>
       </ul>
+    <div class="col-sm-3 col-md-3">
+    <%= form_tag controller: 'artists', action: 'index', method: 'get', class: 'navbar-form', role: 'search' do %>
+      <div class="input-group">
+        <%= text_field_tag :query, params[:query], size: 150, placeholder: "Search", class: "form-control"%>
+      <div class="input-group-btn">
+        <%= button_tag(type: "submit", class: "btn btn-default") do %>
+          <i class="glyphicon glyphicon-search"></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+        </div>
     </nav>
   </div>
 </header>
